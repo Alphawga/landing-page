@@ -8,7 +8,7 @@ export default function Testimonials() {
         <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white p-8 rounded-lg shadow-md">
-              <p className="text-lg mb-6 italic">"{testimonial.content}"</p>
+              <p className="text-lg mb-6 italic">&quot;{testimonial.content}&quot;</p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-[#2D89EF] rounded-full flex items-center justify-center text-white font-bold">
                   {testimonial.author[0]}
