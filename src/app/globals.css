@@ -13,6 +13,23 @@
   --background: #FFFFFF;
   --gray-light: #E5E7EB;
   --gray-medium: #9CA3AF;
+  --elite-navy: #1A365D;
+  --elite-aqua: #00BCD4;
+  --elite-white: #F5F5F5;
+  --elite-yellow: #FFC107;
+  --elite-gray: #E0E0E0;
+  --elite-coral: #FF6F61;
+  --elite-green: #4CAF50;
+  --eat-clean-primary: #2BA084;
+  --eat-clean-secondary: #F8F8F8;
+  --eat-clean-accent: #FFB800;
+  --eat-clean-dark: #333333;
+  --eat-clean-light: #FFFFFF;
+  --multilingo-primary: #1258D5;
+  --multilingo-secondary: #F3F7FF;
+  --multilingo-accent: #F7AA00;
+  --multilingo-dark: #333333;
+  --multilingo-light: #FFFFFF;
 }
 
 @layer base {
@@ -38,6 +55,84 @@
 
   body {
     @apply text-[#333333] bg-white;
+  }
+
+  .elite-copy {
+    @apply font-[var(--font-open-sans)];
+  }
+
+  .elite-copy h1, 
+  .elite-copy h2, 
+  .elite-copy h3 {
+    @apply font-[var(--font-montserrat)] font-bold;
+  }
+
+  .elite-copy h1 {
+    @apply text-3xl md:text-4xl lg:text-[36px] leading-tight;
+  }
+
+  .elite-copy h2 {
+    @apply text-2xl md:text-3xl lg:text-[28px] leading-tight;
+  }
+
+  .elite-copy h3 {
+    @apply text-xl md:text-2xl lg:text-[22px] leading-tight;
+  }
+
+  .elite-copy p {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+
+  .eat-clean {
+    @apply font-[var(--font-open-sans)];
+  }
+
+  .eat-clean h1,
+  .eat-clean h2,
+  .eat-clean h3 {
+    @apply font-[var(--font-montserrat)] font-bold;
+  }
+
+  .eat-clean h1 {
+    @apply text-3xl md:text-4xl lg:text-[2.5rem] leading-tight;
+  }
+
+  .eat-clean h2 {
+    @apply text-2xl md:text-3xl lg:text-[2rem] leading-tight;
+  }
+
+  .eat-clean h3 {
+    @apply text-xl md:text-2xl lg:text-[1.5rem] leading-tight;
+  }
+
+  .eat-clean p {
+    @apply text-base leading-relaxed;
+  }
+
+  .multilingo {
+    @apply font-[var(--font-roboto)];
+  }
+
+  .multilingo h1,
+  .multilingo h2,
+  .multilingo h3 {
+    @apply font-[var(--font-montserrat)] font-bold;
+  }
+
+  .multilingo h1 {
+    @apply text-3xl md:text-4xl lg:text-[2.5rem] leading-tight;
+  }
+
+  .multilingo h2 {
+    @apply text-2xl md:text-3xl lg:text-[2rem] leading-tight;
+  }
+
+  .multilingo h3 {
+    @apply text-xl md:text-2xl lg:text-[1.5rem] leading-tight;
+  }
+
+  .multilingo p {
+    @apply text-base leading-relaxed;
   }
 }
 
@@ -68,5 +163,85 @@
 
   .card {
     @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-200;
+  }
+
+  .elite-btn-primary {
+    @apply bg-[--elite-navy] text-white px-8 py-4 rounded-md
+    hover:bg-[--elite-aqua] transition-colors duration-300
+    focus:outline-none focus:ring-2 focus:ring-[--elite-aqua] focus:ring-offset-2;
+  }
+
+  .elite-btn-secondary {
+    @apply bg-[--elite-aqua] text-[--elite-navy] px-6 py-3 rounded-md
+    hover:bg-[--elite-yellow] transition-colors duration-300
+    focus:outline-none focus:ring-2 focus:ring-[--elite-yellow] focus:ring-offset-2;
+  }
+
+  .elite-section {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+
+  .elite-container {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .elite-card {
+    @apply bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300;
+  }
+
+  .eat-clean-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .eat-clean-btn-primary {
+    @apply bg-[--eat-clean-primary] text-white px-8 py-4 rounded-lg font-medium
+    hover:bg-[--eat-clean-accent] transition-colors duration-300
+    focus:outline-none focus:ring-2 focus:ring-[--eat-clean-primary] focus:ring-offset-2;
+  }
+
+  .eat-clean-btn-secondary {
+    @apply bg-white text-[--eat-clean-primary] border-2 border-[--eat-clean-primary] 
+    px-6 py-3 rounded-lg font-medium
+    hover:bg-[--eat-clean-secondary] transition-colors duration-300
+    focus:outline-none focus:ring-2 focus:ring-[--eat-clean-primary] focus:ring-offset-2;
+  }
+
+  .eat-clean-section {
+    @apply py-16 md:py-20;
+  }
+
+  .eat-clean-card {
+    @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300;
+  }
+
+  .multilingo-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .multilingo-btn-primary {
+    @apply bg-[--multilingo-primary] text-white px-8 py-4 rounded-lg font-medium
+    hover:bg-[--multilingo-accent] transition-colors duration-300
+    focus:outline-none focus:ring-2 focus:ring-[--multilingo-primary] focus:ring-offset-2;
+  }
+
+  .multilingo-btn-secondary {
+    @apply bg-white text-[--multilingo-primary] border-2 border-[--multilingo-primary] 
+    px-6 py-3 rounded-lg font-medium
+    hover:bg-[--multilingo-secondary] transition-colors duration-300
+    focus:outline-none focus:ring-2 focus:ring-[--multilingo-primary] focus:ring-offset-2;
+  }
+
+  .multilingo-section {
+    @apply py-16 md:py-20;
+  }
+
+  .multilingo-card {
+    @apply bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300;
+  }
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
   }
 }
