@@ -86,7 +86,7 @@ export default function Hero() {
           >
             <div className="relative aspect-[4/3] max-w-[600px] mx-auto">
               <Image
-                src="/multilingo/medium-shot-colleagues-meeting.jpg"
+                src="/easy-multilingo/medium-shot-colleagues-meeting.jpg"
                 alt="Group of diverse professionals collaborating on document reviews"
                 fill
                 className="object-cover rounded-3xl"
