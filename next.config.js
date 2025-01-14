@@ -6,6 +6,45 @@ const nextConfig = {
         source: '/',
         destination: '/precision-keywords',
         permanent: true,
+        has: [
+          {
+            type: 'host',
+            value: 'precision-keywords.com',
+          },
+        ],
+      },
+      {
+        source: '/',
+        destination: '/precision-grammar',
+        permanent: true,
+        has: [
+          {
+            type: 'host',
+            value: 'precision-grammar.com',
+          },
+        ],
+      },
+      {
+        source: '/',
+        destination: '/eat-clean',
+        permanent: true,
+        has: [
+          {
+            type: 'host',
+            value: 'eatcleanfit.com',
+          },
+        ],
+      },
+      {
+        source: '/',
+        destination: '/easy-multilingo',
+        permanent: true,
+        has: [
+          {
+            type: 'host',
+            value: 'easymultilingo.com',
+          },
+        ],
       },
     ];
   },
