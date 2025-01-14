@@ -7,10 +7,10 @@ export function middleware(request: NextRequest) {
 
   // Define the routing map - include both www and non-www versions
   const routes = {
-    'precision-keywords.com': '/precision-keywords',
-    'www.precision-keywords.com': '/precision-keywords',
-    'precision-grammar.com': '/precision-grammar',
-    'www.precision-grammar.com': '/precision-grammar',
+    'precisionkeywords.com': '/precision-keywords',
+    'www.precisionkeywords.com': '/precision-keywords',
+    'precisiongrammar.com': '/precision-grammar',
+    'www.precisiongrammar.com': '/precision-grammar',
     'eatcleanfit.com': '/eat-clean',
     'www.eatcleanfit.com': '/eat-clean',
     'easymultilingo.com': '/easy-multilingo',

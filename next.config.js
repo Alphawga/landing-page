@@ -47,7 +47,13 @@ const nextConfig = {
     };
   },
   images: {
-    domains: ['precision-keywords.com', 'precision-grammar.com', 'eatcleanfit.com', 'easymultilingo.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
+    unoptimized: true
   },
 };
 

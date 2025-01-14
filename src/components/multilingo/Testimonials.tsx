@@ -7,14 +7,14 @@ const testimonials = [
   {
     name: "Emilia Jenny",
     role: "Research Scholar",
-    image: "/multilingo/testimonial-1.jpg",
+    image: "/easy-multilingo/testimonial-1.jpg",
     quote: "I was overwhelmed finalizing my research paper, but EasyMultiLingo's team delivered detailed, insightful feedback that significantly improved my work. They were so quick with the turnaround—truly a life-saver!",
     rating: 5
   },
   {
     name: "Toby Thomas",
     role: "Business Consultant",
-    image: "/multilingo/testimonial-2.jpg",
+    image: "/easy-multilingo/testimonial-2.jpg",
     quote: "I had a tight deadline for a proposal and needed a fresh set of eyes to polish it. The service was unbelievably responsive and professional. Their pointed feedback helped me communicate more effectively. I'll definitely use them again!",
     rating: 5
   }
