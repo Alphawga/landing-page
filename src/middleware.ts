@@ -22,9 +22,15 @@ export function middleware(request: NextRequest) {
   
   if (targetPath) {
     // Only rewrite if we're not already on the correct path
+    // For example, if hostname is 'easymultilingo.com' and path is '/about',
+    // we want to rewrite to '/easy-multilingo/about'
     if (!path.startsWith(targetPath)) {
       const url = new URL(request.url)
+      // If we're at the root path ('/'), just use the targetPath
+      // Otherwise append the current path to the targetPath
+      // e.g. '/easy-multilingo' or '/easy-multilingo/about' 
       url.pathname = path === '/' ? targetPath : `${targetPath}${path}`
+      // Rewrite the URL while preserving the original hostname
       return NextResponse.rewrite(url)
     }
   }
