@@ -46,6 +46,9 @@ const nextConfig = {
       ],
     };
   },
+  images: {
+    domains: ['precision-keywords.com', 'precision-grammar.com', 'eatcleanfit.com', 'easymultilingo.com'],
+  },
 };
 
 module.exports = nextConfig; 

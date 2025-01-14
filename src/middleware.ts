@@ -3,6 +3,7 @@ import type { NextRequest } from 'next/server'
 
 export function middleware(request: NextRequest) {
   const hostname = request.headers.get('host') || ''
+  const path = request.nextUrl.pathname
 
   // Define the routing map - include both www and non-www versions
   const routes = {
@@ -20,10 +21,12 @@ export function middleware(request: NextRequest) {
   const targetPath = routes[hostname as keyof typeof routes]
   
   if (targetPath) {
-    // Create a new URL with the target path
-    const url = new URL(request.url)
-    url.pathname = targetPath + url.pathname
-    return NextResponse.rewrite(url)
+    // Only rewrite if we're not already on the correct path
+    if (!path.startsWith(targetPath)) {
+      const url = new URL(request.url)
+      url.pathname = path === '/' ? targetPath : `${targetPath}${path}`
+      return NextResponse.rewrite(url)
+    }
   }
 
   return NextResponse.next()
@@ -32,6 +35,7 @@ export function middleware(request: NextRequest) {
 // Match all paths except static files and api routes
 export const config = {
   matcher: [
-    '/((?!api|_next|static|[\\w-]+\\.\\w+).*)',
+    // Skip api routes
+    '/((?!api/|_next/|_static/|_vercel|[\\w-]+\\.\\w+).*)',
   ],
 } 
