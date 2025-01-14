@@ -1,20 +1,10 @@
-import { Montserrat, Open_Sans } from 'next/font/google';
+import { Metadata } from 'next';
+import { siteMetadata } from '@/config/metadata';
 
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  variable: '--font-montserrat',
-  display: 'swap',
-});
-
-const openSans = Open_Sans({
-  subsets: ['latin'],
-  variable: '--font-open-sans',
-  display: 'swap',
-});
-
-export const metadata = {
-  title: 'EatCleanFit - Healthy Meals & Nutrition Plans',
-  description: 'Fuel your body with delicious, healthy meals that prevent disease. Explore our collection of tasty pasta options and personalized nutrition plans.',
+export const metadata: Metadata = {
+  title: siteMetadata.eatClean.title,
+  description: siteMetadata.eatClean.description,
+  icons: siteMetadata.eatClean.icons,
 };
 
 export default function EatCleanLayout({
@@ -22,9 +12,5 @@ export default function EatCleanLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <div className={`${montserrat.variable} ${openSans.variable} font-sans`}>
-      {children}
-    </div>
-  );
+  return <>{children}</>;
 } 

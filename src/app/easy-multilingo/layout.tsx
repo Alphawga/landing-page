@@ -1,21 +1,10 @@
-import { Montserrat, Roboto } from 'next/font/google';
+import { Metadata } from 'next';
+import { siteMetadata } from '@/config/metadata';
 
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  variable: '--font-montserrat',
-  display: 'swap',
-});
-
-const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '700'],
-  variable: '--font-roboto',
-  display: 'swap',
-});
-
-export const metadata = {
-  title: 'EasyMultiLingo - Advanced Document Review Platform',
-  description: 'Streamline your workflow, ensure accuracy, and collaborate seamlessly using our advanced review platform.',
+export const metadata: Metadata = {
+  title: siteMetadata.easyMultilingo.title,
+  description: siteMetadata.easyMultilingo.description,
+  icons: siteMetadata.easyMultilingo.icons,
 };
 
 export default function EasyMultiLingoLayout({
@@ -23,9 +12,5 @@ export default function EasyMultiLingoLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <div className={`${montserrat.variable} ${roboto.variable} font-sans`}>
-      {children}
-    </div>
-  );
+  return <>{children}</>;
 } 
