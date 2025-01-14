@@ -1,26 +1,16 @@
-import { Montserrat, Roboto } from 'next/font/google';
+import { Metadata } from 'next';
+import { siteMetadata } from '@/config/metadata';
 
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  variable: '--font-montserrat',
-  display: 'swap',
-});
-
-const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['300', '400', '500'],
-  variable: '--font-roboto',
-  display: 'swap',
-});
+export const metadata: Metadata = {
+  title: siteMetadata.precisionGrammar.title,
+  description: siteMetadata.precisionGrammar.description,
+  icons: siteMetadata.precisionGrammar.icons,
+};
 
 export default function PrecisionGrammarLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <div className={`${montserrat.variable} ${roboto.variable}`}>
-      {children}
-    </div>
-  );
+  return <>{children}</>;
 } 

@@ -102,7 +102,7 @@ export default function WriterBlock() {
           >
             <div className="relative aspect-square max-w-[500px] mx-auto">
               <Image
-                src="/multilingo/rb_53095.png"
+                src="/easy-multilingo/rb_53095.png"
                 alt="User typing on a laptop with idea icons appearing on screen"
                 fill
                 className="object-cover rounded-3xl"

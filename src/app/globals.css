@@ -245,3 +245,32 @@
     perspective: 1000px;
   }
 }
+
+/* Standard Container Classes */
+.standard-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Standard Section Padding */
+.standard-section {
+  @apply py-12 md:py-20;
+}
+
+/* Standard Header Padding */
+.standard-header {
+  @apply pt-16 md:pt-20;
+}
+
+/* Standard Content Spacing */
+.standard-content-y {
+  @apply space-y-6 md:space-y-8;
+}
+
+.standard-content-gap {
+  @apply gap-6 md:gap-8;
+}
+
+/* Standard Grid Spacing */
+.standard-grid {
+  @apply grid gap-6 md:gap-8;
+}

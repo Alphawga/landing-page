@@ -4,8 +4,8 @@ import AnimatedGraph from './AnimatedGraph';
 
 export default function Hero() {
   return (
-    <section className="bg-[#F2F5FA] section-padding">
-      <div className="max-w-7xl mx-auto">
+    <section className="standard-section standard-header">
+      <div className="standard-container">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
