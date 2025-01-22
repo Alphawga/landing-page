@@ -20,7 +20,7 @@ export default function Hero() {
               Transform Your Brand With Copy That Inspires Action
             </h1>
             <p className="text-xl md:text-2xl text-white/90">
-              At EliteCopyStudio, we deliver polished, SEO-optimized content designed to engage, rank, and grow.
+              At CopyImpactHub, we deliver polished, SEO-optimized content designed to engage, rank, and grow.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <motion.button
@@ -49,7 +49,7 @@ export default function Hero() {
             <div className="relative aspect-square max-w-[600px] mx-auto">
               <Image
                 src="/elite-copy/vecteezy_illustration-man-working-on-laptop_46013490.png"
-                alt="A professional writer reviewing content on a laptop, symbolizing EliteCopyStudio's expertise"
+                alt="A professional writer reviewing content on a laptop, symbolizing CopyImpactHub's expertise"
                 fill
                 className="object-contain"
                 priority

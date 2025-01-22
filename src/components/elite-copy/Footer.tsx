@@ -53,7 +53,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <Link href="/elite-copy" className="text-2xl font-bold mb-6 block">
-              EliteCopy
+              CopyImpactHub
             </Link>
             <p className="text-white/80 mb-8 max-w-md">
               Transform your brand with copy that inspires action. Professional content writing services tailored to your needs.
@@ -106,7 +106,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/60">
-            © {new Date().getFullYear()} EliteCopy. All rights reserved.
+            © {new Date().getFullYear()} CopyImpactHub. All rights reserved.
           </p>
           <motion.button
             onClick={scrollToTop}

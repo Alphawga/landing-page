@@ -53,7 +53,7 @@ export default function Header() {
           {/* Logo */}
           <Link 
             href="/easy-multilingo" 
-            className={`text-2xl font-bold transition-colors duration-300 ${
+            className={`text-2xl font-bold transition-colors duration-300  ${
               isScrolled ? 'text-[--multilingo-primary]' : 'text-[--multilingo-primary]'
             }`}
           >

@@ -13,7 +13,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata = {
-  title: 'EliteCopyStudio - Professional Copywriting Services',
+  title: 'CopyImpactHub - Professional Copywriting Services',
   description: 'Transform your brand with copy that inspires action. We deliver polished, SEO-optimized content designed to engage, rank, and grow.',
 };
 

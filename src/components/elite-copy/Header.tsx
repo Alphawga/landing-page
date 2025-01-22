@@ -36,7 +36,7 @@ export default function Header() {
               isScrolled ? 'text-[--elite-navy]' : 'text-white'
             }`}
           >
-            EliteCopy
+            CopyImpactHub
           </Link>
 
           {/* Desktop Navigation */}

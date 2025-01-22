@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    content: "EliteCopy transformed our website content completely. The SEO optimization has significantly improved our rankings.",
+    content: "CopyImpactHub transformed our website content completely. The SEO optimization has significantly improved our rankings.",
     author: "Sarah Johnson",
     role: "Marketing Director",
     company: "TechFlow Inc."

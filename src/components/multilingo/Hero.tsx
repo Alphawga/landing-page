@@ -38,7 +38,7 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="text-white space-y-8"
           >
-            <h1>
+            <h1 className="text-shadow-sm">
               Elevate Your Document Review Process with EasyMultiLingo
             </h1>
             <p className="text-xl text-white/90">

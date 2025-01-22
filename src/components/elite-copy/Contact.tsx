@@ -65,7 +65,7 @@ export default function Contact() {
 
             <div className="space-y-6">
               {[
-                { icon: Mail, text: "support@elitecopy.com" },
+                { icon: Mail, text: "support@copyimpacthub.com" },
                 { icon: Phone, text: "+234 123 456 7890" },
                 { icon: MapPin, text: "Lagos, Nigeria" }
               ].map((item, index) => (

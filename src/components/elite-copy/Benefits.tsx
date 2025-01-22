@@ -58,7 +58,7 @@ export default function Benefits() {
           viewport={{ once: true }}
           className="text-center max-w-2xl mx-auto mb-20"
         >
-          <h2 className="text-[--elite-navy] mb-6">Why Choose EliteCopyStudio?</h2>
+          <h2 className="text-[--elite-navy] mb-6">Why Choose CopyImpactHub?</h2>
           <p className="text-gray-600">
             Experience the difference with our comprehensive suite of professional copywriting services.
           </p>

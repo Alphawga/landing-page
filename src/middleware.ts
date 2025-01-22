@@ -14,7 +14,9 @@ export function middleware(request: NextRequest) {
     'eatcleanfit.com': '/eat-clean',
     'www.eatcleanfit.com': '/eat-clean',
     'easymultilingo.com': '/easy-multilingo',
-    'www.easymultilingo.com': '/easy-multilingo'
+    'www.easymultilingo.com': '/easy-multilingo',
+    'copyimpacthub.com': '/elite-copy',
+    'www.copyimpacthub.com': '/elite-copy'
   }
 
   // Get the target path based on the exact hostname
