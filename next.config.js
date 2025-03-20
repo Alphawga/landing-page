@@ -8,6 +8,16 @@ const nextConfig = {
           has: [
             {
               type: 'host',
+              value: 'eatcleanfit.com',
+            },
+          ],
+          destination: '/eat-clean/:path*',
+        },
+        {
+          source: '/:path*',
+          has: [
+            {
+              type: 'host',
               value: 'precision-keywords.com',
             },
           ],
@@ -23,16 +33,7 @@ const nextConfig = {
           ],
           destination: '/precision-grammar/:path*',
         },
-        {
-          source: '/:path*',
-          has: [
-            {
-              type: 'host',
-              value: 'eatcleanfit.com',
-            },
-          ],
-          destination: '/eat-clean/:path*',
-        },
+       
         {
           source: '/:path*',
           has: [
