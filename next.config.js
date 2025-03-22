@@ -3,16 +3,7 @@ const nextConfig = {
   async rewrites() {
     return {
       beforeFiles: [
-        {
-          source: '/:path*',
-          has: [
-            {
-              type: 'host',
-              value: 'eatcleanfit.com',
-            },
-          ],
-          destination: '/eat-clean/:path*',
-        },
+ 
         {
           source: '/:path*',
           has: [
@@ -34,16 +25,6 @@ const nextConfig = {
           destination: '/precision-grammar/:path*',
         },
        
-        {
-          source: '/:path*',
-          has: [
-            {
-              type: 'host',
-              value: 'easymultilingo.com',
-            },
-          ],
-          destination: '/easy-multilingo/:path*',
-        },
       ],
     };
   },
